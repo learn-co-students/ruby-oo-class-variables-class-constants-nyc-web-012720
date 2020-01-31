@@ -9,7 +9,10 @@ class Shoe
     if !(BRANDS.include?(@brand))
         BRANDS << @brand
   end
-end
+  # def initialize(brand)
+  #   @brand = brand
+  #   BRANDS << brand unless BRANDS.include?(brand)
+  # end
 
   def cobble
     self.condition = "new"
